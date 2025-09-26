@@ -41,9 +41,9 @@ check = true + love
 check = int(check)
 
 #if statements to print the message
-if check < 10 or check > 90:
+if (check < 10) or (check > 90):
     print(f"Your score is {check}, you go together like coke and mentos.")
-elif check > 40 and check < 50:
+elif (check > 40) and (check < 50):
     print(f"Your score is {check} you are alright together")
 else:
     print(f"Your score is {check}.")
