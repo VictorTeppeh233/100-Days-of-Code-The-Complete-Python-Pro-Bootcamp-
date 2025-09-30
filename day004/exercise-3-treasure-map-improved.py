@@ -8,27 +8,16 @@ position = input("Where do you want to put the treasure? ")
 # 🚨 Don't change the code above 👆
 
 #Write your code below this row 👇
-#convert position value to int.
+#getting the value for the column and row
+column = int(position[0])
+row = int(position[1])
 
-#
-if position == "11":
-    row1[0] = 'X'
-if position == "12":
-    row2[0] = 'X'
-if position == "13":
-    row3[0] = 'X'
-if position == "21":
-    row1[1] = 'X'
-if position == "22":
-    row2[1] = 'X'
-if position == "23":
-    row3[1] = 'X'
-if position == "31":
-    row1[2] = 'X'
-if position == "32":
-    row2[2] = 'X'
-if position == "33":
-    row3[2] = 'X'
+#getting the row first
+select_row = map[row - 1]
+
+#selecting the column
+select_row[column - 1] = "X"
+
 
 #Write your code above this row 👆
 
